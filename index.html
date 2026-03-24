@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Jokenpo</title>
+</head>
+
+<body>
+    
+    <header>
+        <h1>JO KEN PO</h1>
+        <img src="./assets/jokenpo.gif" alt="jokenpo" id="jokenpo">
+    </header>
+
+    <!-- CONTAINER PRINCIPAL -->
+    <div class="game-container">
+
+        <!-- MENU LATERAL -->
+        <aside class="menu-lateral">
+            <h3>Escolha:</h3>
+            <button onclick="jogar('pedra')" class="btn-opcao">
+                <img src="./assets/pedra.gif" alt="Pedra">
+                <span>Pedra</span>
+            </button>
+            <button onclick="jogar('papel')" class="btn-opcao">
+                <img src="./assets/papel.gif" alt="Papel">
+                <span>Papel</span>
+            </button>
+            <button onclick="jogar('tesoura')" class="btn-opcao">
+                <img src="./assets/tesoura.gif" alt="Tesoura">
+                <span>Tesoura</span>
+            </button>
+        </aside>
+
+        <!-- ÁREA DE BATALHA -->
+        <main class="arena">
+
+            <!-- IMAGENS DOS JOGADORES -->
+            <div class="batalha">
+                <div class="lado-jogador">
+                    <h4>👤 Você</h4>
+                    <!-- IMAGEM COM ID PARA O CSS1 -->
+                    <img id="img-jogador" src="" alt="?" style="display: none;">
+                    <p id="escolha-jogador-texto">?</p>
+                </div>
+
+                <div class="versus">VS</div>
+
+                <div class="lado-pc">
+                    <h4>🤖 PC</h4>
+                    <!-- IMAGEM COM ID PARA O CSS1 -->
+                    <img id="img-pc" src="" alt="?" style="display: none;">
+                    <p id="escolha-pc-texto">?</p>
+                </div>
+            </div>
+
+            <!-- PLACAR -->
+            <div class="placar-container">
+                <div class="placar-box jogador">
+                    <span id="placar-jogador">0</span>
+                </div>
+                <div class="versus-placar">vs</div>
+                <div class="placar-box pc">
+                    <span id="placar-pc">0</span>
+                </div>
+            </div>
+
+            <!-- RESULTADO -->
+            <div id="resultado">Escolha uma opção no menu!</div>
+
+        </main>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
+</body>
+
+</html>
