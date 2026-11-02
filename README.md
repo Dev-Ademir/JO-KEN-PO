@@ -22,10 +22,12 @@ Implementação do jogo Jokenpô (Pedra-Papel-Tesoura) com lógica de pontuaçã
 - [x] Design responsivo e divertido
 
 ## 🚀 Como Jogar
+1. Acesse o jogo online:
+2. ## 🔗 Acesso Online
 
-1. Acesse o jogo online: https://dev-ademir.github.io/JO-KEN-PO/
-2. Clique em sua escolha (Pedra, Papel ou Tesoura)
-3. Veja o resultado e a pontuação!
+**[Clique aqui para usar](https://dev-ademir.github.io/JO-KEN-PO/)
+3. Clique em sua escolha (Pedra, Papel ou Tesoura)
+4. Veja o resultado e a pontuação!
 
 Ou clone o repositório:
 ```bash
